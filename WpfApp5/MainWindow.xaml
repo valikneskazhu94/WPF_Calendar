@@ -1,0 +1,62 @@
+﻿<Window x:Class="WpfApp5.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp5"
+        mc:Ignorable="d"
+        Title="Calendar" Height="500" Width="800">
+    <Grid>
+        <TreeView HorizontalAlignment="Center" VerticalAlignment="Center" Background="AliceBlue" BorderBrush="Bisque">
+            <TextBox FontSize="20"  FontWeight="Black">
+               Поры года!
+            </TextBox>
+            <TreeViewItem Header="Лето" FontSize="15" FontStyle="Italic" >
+                <TreeViewItem Header="Июнь" FontWeight="Black">
+                    <Calendar DisplayDateStart="06/1/2018" DisplayDateEnd="06/30/2018" ></Calendar>
+                </TreeViewItem>
+                <TreeViewItem Header="Июль" FontWeight="Black">
+                    <Calendar DisplayDateStart="07/1/2018" DisplayDateEnd="07/31/2018" ></Calendar>
+                </TreeViewItem>
+                <TreeViewItem Header="Август" FontWeight="Black">
+                    <Calendar DisplayDateStart="08/1/2018" DisplayDateEnd="08/31/2018" ></Calendar>
+                </TreeViewItem>
+            </TreeViewItem>
+            <TreeViewItem Header="Осень" FontSize="15" FontStyle="Italic">
+                <TreeViewItem Header="Сентябрь" FontWeight="Black">
+                    <ListView>
+                        <Calendar DisplayDateStart="09/1/2018" DisplayDateEnd="09/30/2018" ></Calendar>
+                    </ListView>
+                </TreeViewItem>
+                <TreeViewItem Header="Октябрь" FontWeight="Black">
+                    <Calendar DisplayDateStart="10/1/2018" DisplayDateEnd="10/31/2018" ></Calendar>
+                </TreeViewItem>
+                <TreeViewItem Header="Ноябрь" FontWeight="Black">
+                    <Calendar DisplayDateStart="11/1/2018" DisplayDateEnd="11/30/2018" ></Calendar>
+                </TreeViewItem>
+            </TreeViewItem>
+            <TreeViewItem Header="Зима" FontSize="15" FontStyle="Italic">
+                <TreeViewItem Header="Декабрь" FontWeight="Black">
+                    <Calendar DisplayDateStart="12/1/2018" DisplayDateEnd="12/31/2018" ></Calendar>
+                </TreeViewItem>
+                <TreeViewItem Header="Январь" FontWeight="Black">
+                    <Calendar DisplayDateStart="01/1/2018" DisplayDateEnd="01/31/2018" ></Calendar>
+                </TreeViewItem>
+                <TreeViewItem Header="Февраль" FontWeight="Black">
+                    <Calendar DisplayDateStart="02/1/2018" DisplayDateEnd="02/28/2018" ></Calendar>
+                </TreeViewItem>
+            </TreeViewItem>
+            <TreeViewItem Header="Весна" FontSize="15" FontStyle="Italic">
+                <TreeViewItem Header="Март" FontWeight="Black">
+                    <Calendar DisplayDateStart="03/1/2018" DisplayDateEnd="03/31/2018" ></Calendar>
+                </TreeViewItem>
+                <TreeViewItem Header="Апрель" FontWeight="Black">
+                    <Calendar DisplayDateStart="04/1/2018" DisplayDateEnd="04/30/2018" ></Calendar>
+                </TreeViewItem>
+                <TreeViewItem Header="Май" FontWeight="Black">
+                    <Calendar DisplayDateStart="05/1/2018" DisplayDateEnd="05/30/2018" ></Calendar>
+                </TreeViewItem>
+            </TreeViewItem>
+        </TreeView>
+    </Grid>
+</Window>
